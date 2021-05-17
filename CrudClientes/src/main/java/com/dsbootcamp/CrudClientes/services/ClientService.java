@@ -33,12 +33,12 @@ public class ClientService {
 	@Transactional(readOnly = true)
 	public ClientDTO findById(Long id) {
 		Optional<Client> client = repository.findById(id);
-		Client entity =  client.orElseThrow();
+		Client entity =  client.orElseThrow(() -> new ResourceNotFoundException("Entity not found"));
 		return new ClientDTO(entity);
 	}
     
 	@Transactional
-	public ClientDTO insert(ClientDTO dto) {		
+	public ClientDTO insert(ClientDTO dto) {	
 		Client entity = new Client();
 	    copyDtoToEntity(entity, dto);
 	    entity = repository.save(entity);

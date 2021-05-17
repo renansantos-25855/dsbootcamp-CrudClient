@@ -2,6 +2,8 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\renan.souza\Documents\Bootcamp\CrudClientes"/>
+			<item value="C:\Users\renan.souza\Documents\Bootcamp"/>
 			<item value="F:\Atividades do Bootcamp\Atividade CRUD\CRUD\CrudClientes"/>
 		</list>
 		<list key="projectNameTemplate">
